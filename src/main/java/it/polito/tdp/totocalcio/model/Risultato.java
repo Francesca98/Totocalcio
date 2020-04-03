@@ -1,6 +1,7 @@
 package it.polito.tdp.totocalcio.model;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -19,6 +20,10 @@ public class Risultato {
 			risultati.add(RisultatoPartita.valueOf(colonna.charAt(i)));
 		}
 	}
+	
+public Risultato(List<RisultatoPartita> lista)
+{
+	risultati.addAll(lista);}
 	
 	public String toString() {
 		return this.risultati.toString() ;
